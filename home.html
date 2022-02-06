@@ -33,19 +33,22 @@
       <nav class="header-menu menu">
         <ul class="navbar" id="navbar">
           <li>
-            <a href="#">Inicio</a>
+            <a href="home.html">Inicio</a>
           </li>
           <li>
-            <a href="#">Productos</a>
+            <a href="home.html#middle">Productos</a>
           </li>
           <li>
             <a href="#">Acerca de</a>
           </li>
           <li>
-            <a href="#">Contáctanos</a>
+            <a href="https://facebook.com">Contáctanos</a>
           </li>
           <li>
             <a href="#">Login</a>
+          </li>
+          <li>
+            <a href="#">Sign In</a>
           </li>
           <a class="close" href="#">
             <img
@@ -63,7 +66,8 @@
     <!--============================================================================
         #Main
       ==============================================================================-->
-    <div class="container">
+
+    <div id="top" class="container">
       <div class="row">
         <div class="col-2">
           <h1>¡Descubre más!</h1>
@@ -71,18 +75,21 @@
             Averigua los precios de diferentes productos, en diferentes
             categorías, con descuentos de diferentes rangos.
           </p>
-          <a href="" class="btn">Continuar &#8594;</a>
+          <a href="#middle" class="btn">Continuar &#8594;</a>
         </div>
         <div class="col-2">
           <img src="assets/png/homestuff.png" alt="" />
         </div>
       </div>
     </div>
+
     <!--============================================================================
       #Categorías
     ==============================================================================-->
+
     <div class="categorias">
       <div class="small-container">
+        <h2>Categorías</h2>
         <div class="row">
           <div class="col-3">
             <a href="store1.html">
@@ -108,35 +115,49 @@
     <!--============================================================================
       #Productos
     ==============================================================================-->
-    <div class="small-container">
+    <div id="middle" class="small-container">
       <h2>Productos Populares</h2>
       <div class="row">
         <div class="col-4">
-          <img src="assets/png/lenovo_gaming_laptop.png" />
-          <h4>Gaming Laptop Lenovo R9000P</h4>
+          <a href="https://aliexpress.com/item/1005002392563584.html">
+            <img src="assets/png/lenovo_gaming_laptop.png" />
+            <h4>Gaming Laptop Lenovo R9000P</h4>
+          </a>
           <p>$2400</p>
         </div>
         <div class="col-4">
-          <img src="assets/png/samsung_a52.png" />
-          <h4>Samsung A52</h4>
+          <a
+            href="https://www.amazon.com/-/es/Samsung-Galaxy-pulgadas-desbloqueado-internacional/dp/B08ZHNGKHB"
+          >
+            <img src="assets/png/samsung_a52.png" />
+            <h4>Samsung A52</h4>
+          </a>
           <p>$388</p>
         </div>
         <div class="col-4">
-          <img src="assets/png/fridge_samsung.png" />
-          <h4>Refrigerador Samsung RF265BEAESR/AA</h4>
+          <a href="https://www.amazon.com/gp/product/B06XKTTG8Z/">
+            <img src="assets/png/fridge_samsung.png" />
+            <h4>Refrigerador Samsung RF265BEAESR/AA</h4>
+          </a>
           <p>$2800</p>
         </div>
         <div class="col-4">
-          <img src="assets/png/toshiba_microwave.png" />
-          <h4>Horno de Microondas Toshiba EM131A5C-BS</h4>
+          <a
+            href="https://www.amazon.com/-/es/Toshiba-EM131A5C-BS-microondas-inteligente-inoxidable/dp/B071WCB1T6"
+          >
+            <img src="assets/png/toshiba_microwave.png" />
+            <h4>Horno de Microondas Toshiba EM131A5C-BS</h4>
+          </a>
           <p>$150</p>
         </div>
       </div>
     </div>
+
     <!--============================================================================
       #Footer
     ==============================================================================-->
     <footer>
+      <a href="#top">Volver Arriba</a>
       <h1>@Alejandro Cáceres Conde</h1>
     </footer>
   </body>

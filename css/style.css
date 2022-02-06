@@ -1,5 +1,9 @@
 @import url(media-queries.css);
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   /*============================================================================
     #Main BG
@@ -62,11 +66,15 @@ header {
 .hamburger {
   display: none;
 }
+.close {
+  background-image: url(/assets/patterns/footer_lodyas.png);
+  background-repeat: repeat;
+}
 .main .row {
   margin-top: 70px;
 }
 .container {
-  max-width: 1300px;
+  max-width: 1500px;
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
@@ -109,11 +117,14 @@ header {
 /*============================================================================
       #1stDiv
     ==============================================================================*/
-/* div {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-} */
+.first-container filter-container {
+  overflow: hidden;
+}
+.first-container seccion-principal {
+  width: 220px;
+  margin-left: 30px;
+  float: right;
+}
 
 /*============================================================================
     #Categorias
@@ -155,13 +166,20 @@ header {
     #Productos Populares
   ==============================================================================*/
 .col-4 {
-  background-image: url(/assets/patterns/circle-blues.png);
+  background-image: url(/assets/patterns/webb-dark.png);
   background-repeat: repeat;
   flex-basis: 25%;
   padding: 10px;
   min-width: 200px;
-  height: 500px;
+  height: 470px;
   margin-bottom: 50px;
+}
+
+.col-4 a {
+  color: white;
+}
+.col-4 a:hover {
+  color: magenta;
 }
 .col-4 img {
   width: 100%;
@@ -169,28 +187,23 @@ header {
 /*============================================================================
     #Sección
   ==============================================================================*/
-.about,
-.skills,
-.portafolio,
-.contacto {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 39px 0px;
-}
 
-.section-title {
-  width: 190px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid green;
-  text-align: center;
+.filter-contenido {
+  border: 1px white;
 }
-.section-title h1 {
+.filter-container h2 {
   color: white;
   margin: 0;
-  font-size: 35px;
+  font-size: 25px;
   font-weight: 700;
 }
+
+.filter-container {
+  padding: 8px 24px 8px 24px;
+  width: 200vw;
+  max-width: 250px;
+}
+
 /*============================================================================
     #Footer
   ==============================================================================*/
@@ -198,10 +211,17 @@ footer {
   background-image: url(/assets/patterns/hotel-wallpaper-black.png);
   background-repeat: repeat;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 10px 0px;
   border-top: 1px solid white;
+}
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: magenta;
 }
 footer h1 {
   font-weight: bold;

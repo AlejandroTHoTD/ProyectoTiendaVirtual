@@ -42,6 +42,12 @@
   .col-3 h3 {
     font-size: 25px;
   }
+
+  .col-4 {
+    min-width: 200px;
+    height: 400px;
+    margin-bottom: 50px;
+  }
   .main-description h1 {
     font-size: 40px;
   }
@@ -90,16 +96,14 @@
     background: white;
   }
 
-  .close {
-    background: black;
-  }
-
   .hamburger img,
   .close img {
     width: 100%;
     height: 100%;
   }
-
+  .close {
+    margin-right: 35px;
+  }
   .navbar {
     position: absolute;
     z-index: 1000;
@@ -109,7 +113,8 @@
     height: 100vh;
     overflow: hidden;
     list-style: none;
-    background: black;
+    background-image: url(/assets/patterns/footer_lodyas.png);
+    background-repeat: repeat;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
@@ -139,4 +144,7 @@
   .col-3 h3 {
     font-size: 10px;
   }
+}
+footer {
+  margin-left: 5px;
 }
